@@ -30,4 +30,12 @@ else:
 
     ans2 = ansi / f
 
+
+ask=input("Do you want your answer to be rounded (Y/N) ====> ").upper()
+if ask == 'Y':
+    ans = round(ans)
+    ans2 = round(ans2)
+    print(f"x= {ans} or x= {ans2}")    
+else:
     print(f"x= {ans} or x= {ans2}")
+    exit()
